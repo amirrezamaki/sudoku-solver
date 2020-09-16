@@ -31,10 +31,11 @@ def solve(): #main function and set backtracking
                     if is_valid(i,j,n):
                         table[i][j] = n
                         solve()
-                        table[i][j] = 0
+                        table[i][j] = 0 i 
                 return
     show(table)
     input('more?')
+# change this table for any puzzle that you want to solve
 table = [
     [5,0,0,3,0,0,0,0,1], 
     [0,2,0,0,4,0,3,6,0], 
@@ -46,5 +47,5 @@ table = [
     [0,1,7,0,6,0,0,8,0],
     [6,0,0,0,0,2,0,0,3]
 ]
-
+#call main func
 solve()
